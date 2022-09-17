@@ -13,6 +13,7 @@
     "@elastic/elasticsearch": "^7.16.0",
     "@graphql-tools/schema": "^8.3.1",
     "apollo-server": "^3.6.2",
+    "apollo-server-errors": "latest",
     "apollo-server-express": "^3.6.2",
     "aws-sdk": "^2.1055.0",
     "axios": "^0.25.0",
@@ -35,19 +36,19 @@
     "moment": "^2.29.2",
     "mongoosastic": "^4.6.0",
     "mongoose": "^6.1.6",
+    "nodemon": "^2.0.20",
     "node-cron": "^3.0.0",
     "nodejs-base64-converter": "^1.0.5",
     "nodemailer": "^6.7.3",
     "request": "^2.88.2",
     "stream-promise": "^3.2.0",
     "uuid": "^8.3.2",
-    "yup": "^0.32.11",
-    "apollo-server-errors": "latest"
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/node": "^7.16.8",
     "@babel/preset-env": "^7.16.11",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.20"
   }
 }
