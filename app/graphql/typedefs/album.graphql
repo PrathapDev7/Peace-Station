@@ -1,0 +1,109 @@
+type Album implements Timestamps{
+    id: ID!
+    album_name : String
+    album_image : String
+    album_released_year : String
+    album_director : String
+    album_genre : String
+    album_cast : String
+    language : String
+    album_released_country : String
+    tracks : Track
+    imdb_rating : String
+    downloads : String
+    likes : String
+    dislikes : String
+    music_director : String
+    total_songs : String
+    status : Boolean
+    createdAt: Date!
+    updatedAt: Date!
+}
+
+input albumInput{
+    album_name : String
+    album_image : String
+    album_released_year : String
+    album_director : String
+    album_genre : String
+    album_cast : String
+    language : String
+    album_released_country : String
+    tracks : [trackInput]
+    imdb_rating : String
+    downloads : String
+    likes : String
+    dislikes : String
+    music_director : String
+    total_songs : String
+    status : Boolean
+}
+
+input trackInput{
+    track_name : String
+    track_image : String
+    track_download_url : String
+    album_name : String
+    track_released_date : String
+    music_director : String
+    artists : String
+    lyrics_writer : String
+    lyrics : String
+    album_language : String
+    downloads : String
+    likes : String
+    dislikes : String
+    track_duration : String
+    track_size : String
+    genre : String
+    status : Boolean
+}
+
+input AlbumFilter {
+    page: Int
+    per_page_items: Int
+    sort: String
+    album_name : String
+    album_image : String
+    album_released_year : String
+    album_director : String
+    album_genre : String
+    album_cast : String
+    language : String
+    album_released_country : String
+    tracks : [searchTrackInput]
+    imdb_rating : String
+    downloads : String
+    likes : String
+    dislikes : String
+    music_director : String
+    total_songs : String
+    status : Boolean
+}
+
+type albumsPage {
+    totalPages: Int!
+    albums: [Album]!
+    currentPage: Int!
+    totalItems: Int!
+}
+
+input searchTrackInput {
+    track_name : String
+    track_image : String
+    track_download_url : String
+    album_name : String
+    track_released_date : String
+    music_director : String
+    artists : String
+    lyrics_writer : String
+    lyrics : String
+    album_language : String
+    downloads : String
+    likes : String
+    dislikes : String
+    track_duration : String
+    track_size : String
+    genre : String
+    status : Boolean
+}

@@ -1,0 +1,22 @@
+type Query {
+    user(id: String): User
+    track(id: String): Track
+    album(id: String): Album
+    searchAlbums(params: AlbumFilter): albumsPage
+}
+
+type Mutation {
+    # API for users
+    createUser(user: UserCreateInput): User
+    updateUser(user: updateUserInput): User
+
+    # API for tracks
+    createTrack(track: trackInput) : Track
+    updateTrack(id: ID, track: trackInput): Track!
+
+    # API for album
+    createAlbum(album: albumInput) : Album
+    updateAlbum(id: ID, album: albumInput): Album!
+    populateAlbum(album_name: String, album: albumInput): Album!
+
+}

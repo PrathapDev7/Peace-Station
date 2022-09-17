@@ -1,0 +1,43 @@
+type Track implements Timestamps{
+    id: ID!
+    track_name : String!
+    track_image : String
+    track_download_url : String
+    album_name : String
+    track_released_date : String
+    music_director : String
+    artists : String
+    lyrics_writer : String
+    lyrics : String
+    album_language : String
+    downloads : String
+    likes : String
+    dislikes : String
+    track_duration : String
+    track_size : String
+    genre : String
+    status : Boolean
+    createdAt: Date!
+    updatedAt: Date!
+}
+
+input trackInput{
+    track_name : String!
+    track_image : String
+    track_download_url : String
+    album_name : String
+    track_released_date : String
+    music_director : String
+    artists : String
+    lyrics_writer : String
+    lyrics : String
+    album_language : String
+    downloads : String
+    likes : String
+    dislikes : String
+    track_duration : String
+    track_size : String
+    genre : String
+    status : Boolean
+}
+

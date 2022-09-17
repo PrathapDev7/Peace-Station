@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="99a5b4d9-fcba-4632-9d32-eb52949d8e63" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="track-backend" />
+  </component>
+  <component name="ProjectId" id="2Elgco6J6OI4YZbNpOJzOrb6CUv" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Utils" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Utils" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99a5b4d9-fcba-4632-9d32-eb52949d8e63" name="Default Changelist" comment="" />
+      <created>1663175666748</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663175666748</updated>
+      <workItem from="1663175668085" duration="1583000" />
+      <workItem from="1663257947372" duration="6270000" />
+      <workItem from="1663301408557" duration="351000" />
+      <workItem from="1663342060515" duration="5524000" />
+      <workItem from="1663438999425" duration="12705000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/aws-sdk/scripts/services-table-generator.js" />
+        <option value="$PROJECT_DIR$/node_modules/apollo-server-env/src/index.d.ts" />
+        <option value="$PROJECT_DIR$/node_modules/sift/src/operations.d.ts" />
+        <option value="$PROJECT_DIR$/node_modules/sift/src/index.js" />
+        <option value="$PROJECT_DIR$/node_modules/sift/src/core.d.ts" />
+        <option value="$PROJECT_DIR$/node_modules/sift/src/utils.js.map" />
+        <option value="$PROJECT_DIR$/node_modules/sift/src/core.js.map" />
+        <option value="$PROJECT_DIR$/node_modules/sift/src/operations.js" />
+        <option value="$PROJECT_DIR$/node_modules/sift/src/core.js" />
+        <option value="$PROJECT_DIR$/node_modules/sift/src/operations.js.map" />
+        <option value="$PROJECT_DIR$/node_modules/sift/src/index.js.map" />
+        <option value="$PROJECT_DIR$/node_modules/sift/src/utils.js" />
+        <option value="$PROJECT_DIR$/node_modules/sift/src/utils.d.ts" />
+        <option value="$PROJECT_DIR$/node_modules/sift/src/index.d.ts" />
+      </list>
+    </option>
+  </component>
+</project>
