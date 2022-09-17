@@ -2,11 +2,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const port = (
-    process.env.CMD_APP_PORT ?
-        process.env.CMD_APP_PORT :
-        process.env.APP_PORT
-);
+const port = process.env.APP_PORT;
 
 // You may use this as a boolean value for different situations
 const env = {
