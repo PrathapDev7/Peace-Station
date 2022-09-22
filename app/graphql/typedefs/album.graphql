@@ -6,7 +6,7 @@ type Album implements Timestamps{
     album_director : String
     album_genre : String
     album_cast : String
-    language : String
+    language : [String]
     album_released_country : String
     tracks : Track
     imdb_rating : String
@@ -27,7 +27,7 @@ input albumInput{
     album_director : String
     album_genre : String
     album_cast : String
-    language : String
+    language : [String]
     album_released_country : String
     tracks : [trackInput]
     imdb_rating : String

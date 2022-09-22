@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99a5b4d9-fcba-4632-9d32-eb52949d8e63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Masters/Album.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Masters/Album.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/graphql/typedefs/album.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/typedefs/album.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/graphql/typedefs/track.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/typedefs/track.graphql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/@babel/register/.babel.7.18.2.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/@babel/register/.babel.7.18.2.development.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +29,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Utils" />
+    <property name="last_opened_file_path" value="$USER_HOME$/qualwebs/vrozart-backend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -68,7 +70,12 @@
       <workItem from="1663257947372" duration="6270000" />
       <workItem from="1663301408557" duration="351000" />
       <workItem from="1663342060515" duration="5524000" />
-      <workItem from="1663438999425" duration="17250000" />
+      <workItem from="1663438999425" duration="18530000" />
+      <workItem from="1663479996635" duration="2013000" />
+      <workItem from="1663561187443" duration="20000" />
+      <workItem from="1663665792469" duration="307000" />
+      <workItem from="1663865788479" duration="532000" />
+      <workItem from="1663866338160" duration="1168000" />
     </task>
     <task id="LOCAL-00001" summary="procfile">
       <created>1663453421176</created>
@@ -108,7 +115,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

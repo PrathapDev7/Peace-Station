@@ -23,7 +23,7 @@ const albumSchema = new Schema({
             type: String,
         },
         language: {
-            type: String,
+            type: Array,
         },
         album_released_country: {
             type: String,
