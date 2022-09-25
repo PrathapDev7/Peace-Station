@@ -17,10 +17,10 @@ const albumSchema = new Schema({
             type: String,
         },
         album_genre: {
-            type: String,
+            type: Array,
         },
         album_cast: {
-            type: String,
+            type: Array,
         },
         language: {
             type: Array,
@@ -28,9 +28,10 @@ const albumSchema = new Schema({
         album_released_country: {
             type: String,
         },
-        tracks: {
-            type: Array,
-        },
+        tracks: [{
+            type: ObjectId,
+            ref : "track"
+        }],
         imdb_rating: {
             type: String,
         },

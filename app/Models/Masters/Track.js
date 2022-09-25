@@ -5,7 +5,6 @@ import mongoosastic from 'mongoosastic';
 const trackSchema = new Schema({
     track_name: {
         type: String,
-        required: true
     },
     track_image: {
         type: String,
@@ -23,16 +22,16 @@ const trackSchema = new Schema({
         type: String,
     },
     artists: {
-        type: String,
+        type: Array,
     },
     lyrics_writer: {
         type: String,
     },
     lyrics: {
-        type: String,
+        type: Array,
     },
     album_language: {
-        type: String,
+        type: Array,
     },
     downloads: {
         type: String,
@@ -50,10 +49,14 @@ const trackSchema = new Schema({
         type : String
     },
     genre : {
-        type : String
+        type : Array
     },
     status : {
         type : Boolean
+    },
+    albumId : {
+        type : ObjectId,
+        ref : "album"
     }
     },{
     timestamps: true

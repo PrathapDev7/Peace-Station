@@ -4,7 +4,13 @@
     <list default="true" id="99a5b4d9-fcba-4632-9d32-eb52949d8e63" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Masters/Album.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Masters/Album.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Masters/Track.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Masters/Track.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/graphql/resolvers/album/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/resolvers/album/mutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/graphql/resolvers/album/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/resolvers/album/queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/graphql/resolvers/track/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/resolvers/track/mutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/graphql/resolvers/track/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/resolvers/track/queries.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/graphql/typedefs/album.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/typedefs/album.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/graphql/typedefs/index.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/typedefs/index.graphql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/graphql/typedefs/track.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/typedefs/track.graphql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/@babel/register/.babel.7.18.2.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/@babel/register/.babel.7.18.2.development.json" afterDir="false" />
     </list>
@@ -29,7 +35,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/qualwebs/vrozart-backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -75,7 +81,10 @@
       <workItem from="1663561187443" duration="20000" />
       <workItem from="1663665792469" duration="307000" />
       <workItem from="1663865788479" duration="532000" />
-      <workItem from="1663866338160" duration="1168000" />
+      <workItem from="1663866338160" duration="1513000" />
+      <workItem from="1664003734631" duration="2471000" />
+      <workItem from="1664022606497" duration="8419000" />
+      <workItem from="1664101875325" duration="19125000" />
     </task>
     <task id="LOCAL-00001" summary="procfile">
       <created>1663453421176</created>

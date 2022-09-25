@@ -1,45 +1,83 @@
 type Track implements Timestamps{
-    id: ID!
-    track_name : String!
+    _id: ID!
+    track_name : String
     track_image : String
     track_download_url : String
     album_name : String
     track_released_date : String
     music_director : String
-    artists : String
+    artists : [artistType]
     lyrics_writer : String
-    lyrics : String
-    album_language : String
+    lyrics : [lyricsType]
+    album_language : [languageType]
     downloads : String
     likes : String
     dislikes : String
     track_duration : String
     track_size : String
-    genre : String
+    genre : [genreType]
     status : Boolean
+    albumId : ID
     createdAt: Date!
     updatedAt: Date!
 }
 
 input trackInput{
-    track_name : String!
+    track_name : String
     track_image : String
     track_download_url : String
     album_name : String
     track_released_date : String
     music_director : String
-    artists : String
+    artists : [artistInput]
     lyrics_writer : String
-    lyrics : String
-    album_language : String
+    lyrics : [lyricsInput]
+    album_language : [languageInput]
     downloads : String
     likes : String
     dislikes : String
     track_duration : String
     track_size : String
-    genre : String
+    genre : [genreInput]
     status : Boolean
+    albumId : ID
 }
+
+type artistType {
+    singer : String
+}
+
+type lyricsType {
+    lyrics : String
+    type : String
+}
+
+type languageType {
+    language : String
+}
+
+type genreType {
+    genre : String
+}
+
+
+input artistInput {
+    singer : String
+}
+
+input lyricsInput {
+    lyrics : String
+    type : String
+}
+
+input languageInput {
+    language : String
+}
+
+input genreInput {
+    genre : String
+}
+
 
 
 

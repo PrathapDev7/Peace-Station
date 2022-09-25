@@ -2,6 +2,7 @@ type Query {
     user(id: String): User
     track(id: String): Track
     album(id: String): Album
+    albums: Album
     searchAlbums(params: AlbumFilter): albumsPage
 }
 

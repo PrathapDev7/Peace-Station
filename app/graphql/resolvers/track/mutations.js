@@ -30,9 +30,9 @@ const trackMutations = {
             track.status = true;
 
             const saveTrack = new Track(track);
-            return saveTrack.save();
+            return await saveTrack.save();
         } catch (err) {
-            var error = err.inner && err.inner.length ? err.inner[0].message : err;
+            const error = err.inner && err.inner.length ? err.inner[0].message : err;
             return new ApolloError(error);
         }
     },

@@ -67,34 +67,41 @@ const albumMutations = {
 
 
     populateAlbum: async (_, {album_name, album}) => {
+        let arrId=[];
         try{
             await updateAlbumSchema.validate(album, {abortEarly: false});
 
             const albumDetails = await Album.findOne({"album_name" : album_name});
             if(!albumDetails ){
-                console.log("not found");
+                //console.log("not found");
                 throw new ApolloError('Invalid album details.');
             }
             if(albumDetails.tracks.length){
                 await Album.findOneAndUpdate( {"album_name" : album_name}, { $pop: { tracks : -1 } } );
                 const getAllTracks = await Track.find({"album_name" : album_name});
+                const getAllTrack = await Album.find({});
+                getAllTracks.map((id,key)=>{
+                    arrId.push(id._id);
+                });
 
-                return await Album.findOneAndUpdate({
+                /*return await Album.findOneAndUpdate({
                     "album_name" : album_name
                 },{
                     $push: { "tracks": { getAllTracks }}
-                }, { returnOriginal: false });
+                }, { returnOriginal: false });*/
             }
 
             const getAllTracks = await Track.find({"album_name" : album_name});
-
+            //console.log("result",getAllTracks);
+            getAllTracks.map((id,key)=>{
+                arrId.push(id._id.toString());
+            });
+            console.log(typeof arrId);
             return await Album.findOneAndUpdate({
                 "album_name" : album_name
             },{
-                $push: { "tracks": { getAllTracks }}
+                $push: { "tracks":  arrId }
             }, { returnOriginal: false });
-
-
         } catch (err) {
             var error = err.inner && err.inner.length ? err.inner[0].message : err;
             console.log("err", err);

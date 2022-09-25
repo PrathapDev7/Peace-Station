@@ -1,14 +1,14 @@
 type Album implements Timestamps{
-    id: ID!
+    id: ID
     album_name : String
     album_image : String
     album_released_year : String
     album_director : String
-    album_genre : String
-    album_cast : String
-    language : [String]
+    album_genre : [genreType]
+    album_cast : [albumCastType]
+    language : [languageType]
     album_released_country : String
-    tracks : Track
+    tracks : [Track]
     imdb_rating : String
     downloads : String
     likes : String
@@ -25,37 +25,17 @@ input albumInput{
     album_image : String
     album_released_year : String
     album_director : String
-    album_genre : String
-    album_cast : String
-    language : [String]
+    album_genre : [genreInput]
+    album_cast : [albumCastInput]
+    language : [languageInput]
     album_released_country : String
-    tracks : [trackInput]
+    tracks : [ID]
     imdb_rating : String
     downloads : String
     likes : String
     dislikes : String
     music_director : String
     total_songs : String
-    status : Boolean
-}
-
-input trackInput{
-    track_name : String
-    track_image : String
-    track_download_url : String
-    album_name : String
-    track_released_date : String
-    music_director : String
-    artists : String
-    lyrics_writer : String
-    lyrics : String
-    album_language : String
-    downloads : String
-    likes : String
-    dislikes : String
-    track_duration : String
-    track_size : String
-    genre : String
     status : Boolean
 }
 
@@ -67,11 +47,11 @@ input AlbumFilter {
     album_image : String
     album_released_year : String
     album_director : String
-    album_genre : String
-    album_cast : String
-    language : String
+    tracks : [trackInput]
+    album_genre : [genreInput]
+    album_cast : [albumCastInput]
+    language : [languageInput]
     album_released_country : String
-    tracks : [searchTrackInput]
     imdb_rating : String
     downloads : String
     likes : String
@@ -81,11 +61,22 @@ input AlbumFilter {
     status : Boolean
 }
 
+type albumCastType {
+    actor : String
+    actress : String
+}
+
+input albumCastInput {
+    actor : String
+    actress : String
+}
+
 type albumsPage {
-    totalPages: Int!
-    albums: [Album]!
-    currentPage: Int!
-    totalItems: Int!
+    totalPages: Int
+    albums: [Album]
+    currentPage: Int
+    totalItems: Int
+    tracks : [Track]
 }
 
 input searchTrackInput {
