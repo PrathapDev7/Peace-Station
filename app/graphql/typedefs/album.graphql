@@ -86,9 +86,9 @@ input searchTrackInput {
     album_name : String
     track_released_date : String
     music_director : String
-    artists : String
+    artists : [artistInput]
     lyrics_writer : String
-    lyrics : String
+    lyrics : [lyricsInput]
     album_language : String
     downloads : String
     likes : String

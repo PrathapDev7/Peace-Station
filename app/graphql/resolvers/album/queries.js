@@ -38,8 +38,11 @@ const albumQueries = {
             if(params.music_director){
                 filters['music_director'] = params.music_director;
             }
+            if(params.tracks.artists.singer){
+                filters['artists'] = params.tracks.artists.singer;
+            }
 
-            const albums = await Album.find(filters).populate({path: "tracks"}).sort(sort)
+            const albums = await Album.find(filters).populate("tracks").sort(sort)
                 .limit(limit * 1)
                 .skip((page - 1) * perPageItems)
                 .exec();

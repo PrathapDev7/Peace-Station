@@ -43,6 +43,37 @@ input trackInput{
     albumId : ID
 }
 
+input TrackFilter {
+    page: Int
+    per_page_items: Int
+    sort: String
+    track_name : String
+    track_image : String
+    track_download_url : String
+    album_name : String
+    track_released_date : String
+    music_director : String
+    artists : [artistInput]
+    lyrics_writer : String
+    lyrics : [lyricsInput]
+    album_language : [languageInput]
+    downloads : String
+    likes : String
+    dislikes : String
+    track_duration : String
+    track_size : String
+    genre : [genreInput]
+    status : Boolean
+    albumId : ID
+}
+
+type tracksPage {
+    totalPages: Int
+    tracks: [Track]
+    currentPage: Int
+    totalItems: Int
+}
+
 type artistType {
     singer : String
 }
@@ -77,6 +108,8 @@ input languageInput {
 input genreInput {
     genre : String
 }
+
+
 
 
 
