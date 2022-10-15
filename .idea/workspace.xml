@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="99a5b4d9-fcba-4632-9d32-eb52949d8e63" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +78,7 @@
       <workItem from="1664101875325" duration="20182000" />
       <workItem from="1664295749545" duration="667000" />
       <workItem from="1664337512501" duration="129000" />
-      <workItem from="1665778126973" duration="4807000" />
+      <workItem from="1665778126973" duration="5860000" />
     </task>
     <task id="LOCAL-00001" summary="procfile">
       <created>1663453421176</created>
@@ -100,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663455642399</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="cyclic">
+      <created>1665860458490</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665860458490</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +136,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="procfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="procfile" />
+    <MESSAGE value="cyclic" />
+    <option name="LAST_COMMIT_MESSAGE" value="cyclic" />
   </component>
 </project>
