@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99a5b4d9-fcba-4632-9d32-eb52949d8e63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/MusicDirectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/graphql/resolvers/musicDirectors/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/graphql/resolvers/musicDirectors/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/graphql/resolvers/musicDirectors/queries.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/graphql/typedefs/musicDirectors.graphql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/MusicDirectorsSeeder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Utils/Helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Utils/Helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/graphql/resolvers/album/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/resolvers/album/mutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/graphql/resolvers/album/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/resolvers/album/queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/graphql/resolvers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/resolvers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/graphql/resolvers/track/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/resolvers/track/queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/graphql/typedefs/index.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/typedefs/index.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/qualwebs/vrozart-backend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -35,7 +50,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/graphql/resolvers" />
       <recent name="$PROJECT_DIR$/app/Utils" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -77,7 +96,8 @@
       <workItem from="1664101875325" duration="20182000" />
       <workItem from="1664295749545" duration="667000" />
       <workItem from="1664337512501" duration="129000" />
-      <workItem from="1665778126973" duration="6432000" />
+      <workItem from="1665778126973" duration="17815000" />
+      <workItem from="1666368237925" duration="1463000" />
     </task>
     <task id="LOCAL-00001" summary="procfile">
       <created>1663453421176</created>
@@ -121,7 +141,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665862297108</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="cyclic">
+      <created>1665862582124</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665862582124</updated>
+    </task>
+    <task id="LOCAL-00008" summary="cyclic">
+      <created>1665862682154</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665862682154</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

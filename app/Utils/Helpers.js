@@ -4,13 +4,13 @@ import {Track} from "../Models";
 const trackFilter = async (trackInput) => {
 
     let filter = {
-        album_name : {'$regex': (!trackInput.album_name) ? '' : trackInput.album_name, '$options': 'i'},
+        album_name : trackInput.album_name
     };
 
     if (!trackInput.album_name)
         delete filter['album_name'];
 
-    return await Track.find(filter, {projection: {_id: 1}});
+    return await Track.find(filter);
 };
 
 module.exports = {

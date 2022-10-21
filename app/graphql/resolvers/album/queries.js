@@ -1,5 +1,7 @@
 import {Album} from './../../../Models';
 import {ApolloError} from "apollo-server-errors";
+import {trackFilter} from "../../../Utils/Helpers";
+import Track from "../../../Models/Masters/Track";
 
 const albumQueries = {
 
@@ -26,6 +28,12 @@ const albumQueries = {
                 sort[sortKey] = sortVal
             }
 
+            if(params.tracks){
+                let trackInput = params.tracks[0];
+                let tracks = await trackFilter(trackInput);
+                filters['tracks'] = tracks[0]._id;
+            }
+
             if(params.album_name){
                 filters['album_name'] = params.album_name;
             }
@@ -37,9 +45,6 @@ const albumQueries = {
             }
             if(params.music_director){
                 filters['music_director'] = params.music_director;
-            }
-            if(params.tracks.artists.singer){
-                filters['artists'] = params.tracks.artists.singer;
             }
 
             const albums = await Album.find(filters).populate("tracks").sort(sort)

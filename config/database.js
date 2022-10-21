@@ -1,6 +1,6 @@
 import Mongoose from 'mongoose';
 require('dotenv').config();
-const dbURI = process.env.DB_URI
+const dbURI = process.env.DB_URI;
 
 let isConnected;
 let db;

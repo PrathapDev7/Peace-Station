@@ -1,0 +1,12 @@
+type MusicDirectors implements Timestamps {
+    id: ID
+    name : String
+    image: String
+    createdAt: Date!
+    updatedAt: Date!
+}
+
+input musicDirectorsInput {
+    name : String
+    image :String
+}

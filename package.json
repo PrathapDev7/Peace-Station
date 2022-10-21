@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon ./app.js --exec babel-node"
+    "start": "nodemon ./app.js --exec babel-node",
+    "seed-all" : "npm run musicDirectors-seeder",
+    "musicDirectors-seeder": "node database/seeds/MusicDirectorsSeeder.js"
   },
   "author": "",
   "license": "ISC",

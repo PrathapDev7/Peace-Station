@@ -2,6 +2,7 @@
 import {userMutations,userQueries} from "./user";
 import {trackMutations, trackQueries} from "./track";
 import {albumMutations, albumQueries} from "./album";
+import {musicDirectorsMutations, musicDirectorsQueries} from "./musicDirectors";
 
 
 const resolvers = {
@@ -9,11 +10,13 @@ const resolvers = {
         ...userQueries,
         ...trackQueries,
         ...albumQueries,
+        ...musicDirectorsQueries
     },
     Mutation: {
         ...userMutations,
         ...trackMutations,
         ...albumMutations,
+        ...musicDirectorsMutations
     }
 };
 

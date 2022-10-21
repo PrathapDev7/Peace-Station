@@ -5,6 +5,7 @@ type Query {
     albums: Album
     searchAlbums(params: AlbumFilter): albumsPage
     searchTracks(params: TrackFilter): tracksPage
+    searchMusicDirectors: [MusicDirectors]!
 }
 
 type Mutation {
@@ -20,5 +21,8 @@ type Mutation {
     createAlbum(album: albumInput) : Album
     updateAlbum(id: ID, album: albumInput): Album!
     populateAlbum(album_name: String, album: albumInput): Album!
+
+    #seeders
+    createMusicDirectors(musicDirectors: musicDirectorsInput): MusicDirectors
 
 }

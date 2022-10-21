@@ -29,8 +29,8 @@ const trackQueries = {
             if(params.track_name){
                 filters['track_name'] = params.track_name;
             }
-            if(params.artists.singer){
-                filters['artists'] = params.artists.singer;
+            if(params.artists){
+                filters['artists'] = params.artists[0];
             }
 
             const tracks = await Track.find(filters).sort(sort)

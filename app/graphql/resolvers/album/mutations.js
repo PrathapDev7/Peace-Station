@@ -81,27 +81,23 @@ const albumMutations = {
                 const getAllTracks = await Track.find({"album_name" : album_name});
                 const getAllTrack = await Album.find({});
                 getAllTracks.map((id,key)=>{
-                    arrId.push(id._id);
+                    //arrId.push(id._id);
+                    arrId.push(id);
                 });
-
-                /*return await Album.findOneAndUpdate({
-                    "album_name" : album_name
-                },{
-                    $push: { "tracks": { getAllTracks }}
-                }, { returnOriginal: false });*/
             }
 
             const getAllTracks = await Track.find({"album_name" : album_name});
             //console.log("result",getAllTracks);
             getAllTracks.map((id,key)=>{
-                arrId.push(id._id.toString());
+                //arrId.push(id._id.toString());
+                arrId.push(id);
             });
-            console.log(typeof arrId);
+            console.log(arrId);
             return await Album.findOneAndUpdate({
                 "album_name" : album_name
             },{
                 $push: { "tracks":  arrId }
-            }, { returnOriginal: false });
+            });
         } catch (err) {
             var error = err.inner && err.inner.length ? err.inner[0].message : err;
             console.log("err", err);
